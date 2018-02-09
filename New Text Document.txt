@@ -1,0 +1,9 @@
+
+SELECT 
+    *
+FROM
+    emp
+    
+        INNER JOIN
+    dept ON emp.emp_dept = dept.dept_id group by emp.emp_dept,emp.emp_name
+ORDER BY emp.emp_dept,emp.emp_sal desc;
